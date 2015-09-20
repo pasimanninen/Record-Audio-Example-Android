@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:onClick="startRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start recording audio"
+        android:id="@+id/startRecordingButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:onClick="stopRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop recording audio"
+        android:id="@+id/stopRecordingButton"
+        android:layout_below="@+id/startRecordingButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/startRecordingButton" />
+
+    <Button
+        android:onClick="playAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play audio"
+        android:id="@+id/playButton"
+        android:layout_below="@+id/stopRecordingButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/stopRecordingButton" />
+
+    <Button
+        android:onClick="stopAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop audio"
+        android:id="@+id/stopButton"
+        android:layout_below="@+id/playButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/playButton" />
+</RelativeLayout>
