@@ -12,7 +12,8 @@
         android:text="Start recording audio"
         android:id="@+id/startRecordingButton"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/stopRecordingButton" />
 
     <Button
         android:onClick="stopRecording"
@@ -22,7 +23,7 @@
         android:id="@+id/stopRecordingButton"
         android:layout_below="@+id/startRecordingButton"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/startRecordingButton" />
+        android:layout_alignEnd="@+id/playButton" />
 
     <Button
         android:onClick="playAudio"
@@ -32,7 +33,7 @@
         android:id="@+id/playButton"
         android:layout_below="@+id/stopRecordingButton"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/stopRecordingButton" />
+        android:layout_alignEnd="@+id/stopButton" />
 
     <Button
         android:onClick="stopAudio"
@@ -42,5 +43,14 @@
         android:id="@+id/stopButton"
         android:layout_below="@+id/playButton"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/playButton" />
+        android:layout_alignEnd="@+id/recordAudioWithIntent" />
+
+    <Button
+        android:onClick="recordAudioWithIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="record audio with intent"
+        android:id="@+id/recordAudioWithIntent"
+        android:layout_below="@+id/stopButton"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
